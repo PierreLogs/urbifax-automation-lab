@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urbifax Automation Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <!-- LANDING PAGE-->
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+      <h2 class="text-2xl font-bold mb-6 text-lue-600">Interés Inmobiliario</h2>
+      <form id="leadForm" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Nombre Completo</label>
+          <input
+            type="text"
+            id="nombre"
+            required
+            class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Telefono (Whatsapp)</label>
+          <input
+            type="tel"
+            id="telefono"
+            placeholder="+51..."
+            required
+            class="w-full border p-2 rounded"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Presupuesto (S/.)</label>
+          <input
+            type="number"
+            id="presupuesto"
+            required
+            class="w-full border p-2 rounded"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+        >
+          Enviar Información
+        </button>
+      </form>
+      <p id="mensaje" class="mt-4 text-center text-sm hidden"></p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
